@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/77ad616e29.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+<body style="background-color: whitesmoke;">
+    <!-- Hotel listings starts here -->
+
+    <section class="content">
+        
+        <div class="navbar">
+            <div class="container">
+                <a href="index.html">
+                    <div class="logo">
+                        <span class="left">○</span>
+                         lo.
+                         <span> go </span> 
+                        <span class="right">○</span>
+                    </div>
+                </a>
+    
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            │
+                        </li>
+                        <li>
+                            <a href="#">Join Beta</a>
+                        </li>
+                        <li>
+                            <a href="login.html" target="_blank">Login</a>
+                        </li>
+                        <li class="create-btn" id="create">
+                            <a href="register.html" target="_blank">Create Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- using same booking search panel on listing page -->
+
+        <div class="booking-panel2">
+            
+            <div class="building2">
+                <img src="images/hotelicon.png" alt="not found" >
+            </div>
+            <div class="city2">
+                <label for=""> 
+                    <i class="fas fa-map-marker-alt fa-sm"></i> City
+                </label>
+                <input type="search" name="search" id="search" placeholder="Enter City">
+            </div>
+
+            <div class="checkin2">
+                <label for="">
+                    <i class="fas fa-calendar fa-sm"></i>
+                    Check-In
+                </label>
+                <input type="date" name="" id="">
+            </div>
+
+            <div class="checkout2">
+                <label for="">
+                    <i class="fas fa-calendar fa-sm"></i>
+                    Check-Out
+                </label>
+                <input type="date" name="" id="">
+            </div>
+            
+            <div class="guest2">
+                <label for="">
+                    <i class="fas fa-user-friends fa-sm" ></i>
+                    Guests
+                </label>
+
+                <div id="guest2">
+                    <input type="number" name="" id="" placeholder="Adults">
+                    <input type="number" name="" id="" placeholder="Kids">
+                </div>
+            </div>
+
+            <div class="search-button2" onclick="location.href = 'listing.html'">
+                <input type="button" value="Find Hotels"> 
+            </div>
+            
+        </div>
+
+        <div class="parts">
+            
+            <!-- <div class="left">
+                <div class="container">
+                    <label for="">
+                        Trending Destinations
+                    </label>
+                </div>
+            </div> -->
+
+            <div class="right">
+                <div class="hotels">
+                    <div class="container">
+        
+                        <!-- hotels listing card starts here -->
+        
+                        <div class="listed">
+                            
+                            <div class="pic">
+                                <a href="images/lalit.png" target="_blank">
+                                    <img src="images/lalit.png" alt="Not Found">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <label class="hotel-name">
+                                    <a href="https://www.expedia.co.in/Chandigarh-Hotels-The-LaLiT-Chandigarh.h7340447.Hotel-Information">
+                                    The LaLit Chandigarh</a>
+                                </label>
+                                <h4 class="address">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    Rajiv Gandhi, IT Park, Chandigarh, Punjab
+                                </h4>
+                                
+                                <div class="description">
+                                    In the business district and near a train station,
+                                     The LaLiT Chandigarh is in an area with good airport proximity.
+                                </div>
+        
+                                <div class="price">
+                                    <h1>₹ 4,653</h1>
+                                    <h6>(including taxes & fees)</h6>
+                                </div>
+                                    
+                                <div class="book-btn" onclick="location.href = 'payment.html'">
+                                    <input type="button" value="Book Now">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- hotel card completed below is same repeating thing -->
+        
+                        <div class="listed">
+                            
+                            <div class="pic">
+                                <a href="images/jw.png" target="_blank">
+                                    <img src="images/jw.png" alt="Not Found">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <label class="hotel-name">
+                                    <a href="https://www.expedia.co.in/Chandigarh-Hotels-JW-Marriott-Hotel-Chandigarh.h4268725.Hotel-Information" target="_blank">
+                                        JW Marriot Hotel
+                                    </a>
+                                </label>
+                                <h4 class="address">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    Sector 35B, Dakshin Marg, Chandigarh, Punjab
+                                </h4>
+                                
+                                <div class="description">
+                                    Located in Chandigarh, JW Marriott Hotel Chandigarh is in the city centre and near the airport.
+                                </div>
+        
+                                <div class="price">
+                                    <h1>₹ 7,749</h1>
+                                    <h6>(including taxes & fees)</h6>
+                                </div>
+                                    
+                                <div class="book-btn" onclick="location.href = 'payment.html'">
+                                    <input type="button" value="Book Now">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="listed">
+                            
+                            <div class="pic">
+                                <a href="images/hyatt.png" target="_blank">
+                                    <img src="images/hyatt.png" alt="Not Found">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <label class="hotel-name">
+                                    <a href="https://www.expedia.co.in/Chandigarh-Hotels-Hyatt-Regency-Chandigarh.h13066637.Hotel-Information">
+                                        Hyatt Regency
+                                    </a>
+                                </label>
+                                <h4 class="address">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    178 Phase I, Chandigarh, 160002
+                                </h4>
+                                
+                                <div class="description">
+                                    Zakir Rose Garden and Government Museum and Art Gallery are also worth visiting.
+                                </div>
+        
+                                <div class="price">
+                                    <h1>₹ 7,600</h1>
+                                    <h6>(including taxes & fees)</h6>
+                                </div>
+                                    
+                                <div class="book-btn" onclick="location.href = 'payment.html'">
+                                    <input type="button" value="Book Now">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listed">
+                            
+                            <div class="pic">
+                                <a href="images/holidayinn.png" target="_blank">
+                                    <img src="images/holidayinn.png" alt="Not Found">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <label class="hotel-name">
+                                    <a href="https://www.expedia.co.in/Chandigarh-Hotels-Holiday-Inn-Chandigarh-Panchkula.h5178155.Hotel-Information" target="_blank">
+                                        Holiday Inn Panchkula
+                                    </a>
+                                </label>
+                                <h4 class="address">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    City Centre, Sector 3, Panchkula, 134109
+                                </h4>
+                                
+                                <div class="description">
+                                    Located in Panchkula, Holiday Inn Chandigarh Panchkula, 
+                                    an IHG Hotel is in the city centre and next to a golf course.
+                                </div>
+        
+                                <div class="price">
+                                    <h1>₹ 3,061</h1>
+                                    <h6>(including taxes & fees)</h6>
+                                </div>
+                                    
+                                <div class="book-btn" onclick="location.href = 'payment.html'">
+                                    <input type="button" value="Book Now">
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+    </section>
+</body>
+</html>
+
+

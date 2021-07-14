@@ -1,0 +1,210 @@
+:root {
+    --myblue: #1882FA;
+    --myorange: #F83A08;
+}
+
+body {
+    margin: 0;
+    font-family: 'poppins';
+    display: flex;
+    justify-content: center;
+    
+}
+
+.credit {
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    color: white;
+}
+
+.credit a {
+    color: whitesmoke;
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+.navbar{
+    margin: 0;
+    /* box-shadow: 0px 1px 20px 1px #14213d; */
+    background-color: white;
+    width: 100%;
+    opacity: 1;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    align-items: center;
+}
+
+.logo{
+    color: var(--myblue);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo span{
+    color: var(--myorange);
+}
+
+ul{
+    display: flex;
+}
+
+
+.navbar ul li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 0 25px;
+}
+
+.navbar a{
+    font-weight: bold;
+    color: var(--myorange);
+    text-decoration: none;
+}
+
+/* this is for register-box */
+
+
+#register .container form , .login-page{
+    position: absolute;
+    margin: 0;
+    padding-top: 5px;
+    background-color: #3C409B;
+    height: fit-content;
+    width: 20%;
+    border-radius: 5px 5px 0 0;
+
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 22em;
+
+    background-image: linear-gradient(to bottom, #1D58CD, #83D6FE);
+    box-shadow: 1px 1px 10px 0 black;
+    
+    transition: all 0.3s ease;
+}
+
+.login-page {
+    background-image: linear-gradient(to bottom, #F83A08, #ee8616);
+}
+
+form li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+    align-items: center;
+}
+
+
+
+
+/* i copied register page from another project of my own and 
+    some fault was showed up in name input box so i did this below to make it normal */
+
+.name {
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: .5em;
+    box-shadow: 1px 0px 2px 0 #314877;
+}
+
+
+form label {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+}
+
+form input {
+    padding: .5em;
+    border: 2px solid white;
+    border-radius: .2em;
+    margin-bottom: 5px;
+    width: 100%;
+    outline: none;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 2px 0 #314877;
+}
+
+.register-button-cta , .login-button-cta{
+    padding: .3em;
+    border: 2px solid #1D58CD;
+    border-radius: .2em;
+    background: #1D58CD;
+    color: white;
+    font-size: 1em;
+    width: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 0 #1d58cd;
+}
+
+.login-button-cta {
+    background-color: black;
+    border: 2px solid black;
+    box-shadow: 1px 1px 10px 0 black;
+}
+
+form li h5 {
+    margin-top: -5px;
+    font-weight: normal;
+}
+h5 a {
+    color: var(--myorange);
+}
+
+.login-page form li h5 {
+    margin-top: -5px;
+    font-weight: normal;
+    color: white;
+}
+.login-page h5 a {
+    color: whitesmoke;
+}
+
+.or {
+    margin-top: -2em;
+    font-weight: bold;
+}
+
+.icons {
+    position: absolute;
+    border:2px solid white;
+    padding: 5px 5px;
+    background: black;
+    border-radius: 5em;
+    margin-top: -7px;
+    box-shadow: 1px 1px 20px 0 #314877;
+}
+
+.icons img {
+    position: relative;
+    width: 25px;
+    margin: .4em .6em 0 .6em;
+}
+
+.create-btn a{
+    color: #ffffff;
+    border: none;
+    background-color: var(--myorange);
+    border-radius: 5em;
+    padding: 5px 15px;
+    transition: 400ms;
+}
+
+.create-btn a:hover {
+    
+    background-image: linear-gradient(to right, #F83A08, #ee8616);
+}

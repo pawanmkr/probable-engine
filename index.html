@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/77ad616e29.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home / Final Project</title>
+</head>
+<body id="temp-body">
+    <section class="first-section" id="first-section">
+        <div class="navbar">
+            <div class="container">
+                <a href="index.html">
+                    <div class="logo">
+                        <span class="left">○</span>
+                         lo.
+                         <span> go </span> 
+                        <span class="right">○</span>
+                    </div>
+                </a>
+    
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            │
+                        </li>
+                        <li>
+                            <a href="#">Join Beta</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="bringLogin()">Login</a>
+                        </li>
+                        <li class="create-btn" id="create">
+                            <a href="#" onclick="create()">Create Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="vector">
+            <img src="images/vector.png" alt="not found">
+        </div>
+
+        <div class="booking-panel">
+            
+            <div class="building">
+                <img src="images/hotelicon.png" alt="not found" >
+            </div>
+            <div class="city">
+                <label for=""> 
+                    <i class="fas fa-map-marker-alt fa-sm"></i> City
+                </label>
+                <input type="search" name="search" id="search" placeholder="Enter City">
+            </div>
+
+            <div class="checkin">
+                <label for="">
+                    <i class="fas fa-calendar fa-sm"></i>
+                    Check-In
+                </label>
+                <input type="date" name="" id="">
+            </div>
+
+            <div class="checkout">
+                <label for="">
+                    <i class="fas fa-calendar fa-sm"></i>
+                    Check-Out
+                </label>
+                <input type="date" name="" id="">
+            </div>
+            
+            <div class="guest">
+                <label for="">
+                    <i class="fas fa-user-friends fa-sm" ></i>
+                    Guests
+                </label>
+
+                <div id="guest">
+                    <input type="number" name="" id="" placeholder="Adults">
+                    <input type="number" name="" id="" placeholder="Kids">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="search-button" id="search-btn" onclick="location.href = 'listing.html'">
+            <input type="button" value="Find Hotels">
+        </div>
+
+        <div class="saying">
+            <h1>
+                - Life is Short & The World is Wide -
+            </h1>
+        </div>
+    </section>
+    
+    <!-- landing page finishes here -->
+
+    <!-- login on homepage -->
+
+        <div class="login-page" id="loginpage">
+            <form action="#">
+                <li>
+                    <label for="">Login</label>
+                </li>
+                <li>
+                    <input type="email" placeholder="Email...">
+                </li>
+                <li>
+                    <input type="password" name="password" id="password" placeholder="Create New Password">
+                </li>
+                <li>
+                    <button class="login-button-cta" id="login-button-cta">Login</button>
+                </li>
+                <li>
+                    <h5>
+                        If You're New?
+                        <span>
+                            <a href="register.html" target="_blank">Register</a>
+                        </span>
+                    </h5>
+                    <br> <span class="or">or</span>
+                </li>
+                <li>
+                    <div class="icons">
+                        <a href="">
+                            <img src="icons/google.png">
+                        </a>
+                        <a href="">
+                            <img src="icons/microsoft.png">
+                        </a>
+                        <a href="">
+                            <img src="icons/facebook.png"> 
+                        </a>                       
+                    
+                    </div>
+            </form>
+            <div class="back" id="back-btn" onclick="removeLogin()">
+                <i class="fas fa-times fa-lg"></i>
+            </div>
+        </div>
+
+        <!-- register and login here -->
+    
+        <div id="register" class="register-box" >
+
+            <form action="#">
+                <li>
+                    <label for="">Create Account</label>
+                </li>
+                <li>
+                    <input type="text" class="name" id="name" placeholder="Name...">
+                </li>
+                <li>
+                    <input type="email" name="email" id="email" placeholder="Email...">
+                </li>
+                <li>
+                    <input type="number" name="phone-number" id="phone-number" placeholder="Phone Number">
+                </li>
+                <li>
+                    <input type="password" name="password" id="register-password" placeholder="Create New Password">
+                </li>
+                <li>
+                    <button class="register-button-cta" id="register-button-cta">Register</button>
+                </li>
+                <li>
+                    <h5>
+                        Already have an account?
+                        <span>
+                            <a href="login.html" target="_blank">Login</a>
+                        </span>
+                    </h5>
+                    <br> <span class="or">or</span>
+                </li>
+                <li>
+                    <div class="icons">
+                        <a href="">
+                            <img src="icons/google.png">
+                        </a>
+                        <a href="">
+                            <img src="icons/microsoft.png">
+                        </a>
+                        <a href="">
+                            <img src="icons/facebook.png"> 
+                        </a>                       
+                    
+                    </div>
+            </form>
+            
+            <div class="back">
+                <i class="fa fa-times" onclick="remove()">  </i>
+            </div>
+            
+        </div>
+
+</body>
+</html>

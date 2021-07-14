@@ -1,0 +1,852 @@
+:root {
+    --myblue: #1882FA;
+    --myorange: #F83A08;
+}
+
+body{
+    margin: 0;
+    background-color: white;
+    font-family: 'poppins';
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.show-body {
+    opacity: 0.2;
+
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    margin: 0 2em 0 2em;
+    /* box-shadow: 0px 1px 20px 1px #14213d; */
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    align-items: center;
+}
+
+.logo{
+    color: var(--myblue);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo span{
+    color: var(--myorange);
+}
+
+ul{
+    display: flex;
+}
+
+
+
+/* was just doing something ignore this */
+.navigation ul:first-child {
+    cursor:no-drop
+}
+
+.navbar ul li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 0 25px;
+}
+
+.navbar a{
+    font-weight: bold;
+    color: var(--myorange);
+    text-decoration: none;
+}
+
+.create-btn a{
+    color: #ffffff;
+    border: none;
+    background-color: var(--myorange);
+    border-radius: 5em;
+    padding: 5px 15px;
+    transition: 400ms;
+}
+
+.create-btn a:hover {
+    
+    background-image: linear-gradient(to right, #F83A08, #ee8616);
+}
+
+
+.vector img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+
+.booking-panel, .booking-panel2{
+    display: flex;
+    justify-content: center;
+    color: var(--myorange);
+    background-color: white;
+    width: 76%;
+    border-radius: 5px;
+    /* transform: translate(15%, 9%); */
+    /* padding: .5em; */ 
+    box-shadow: 1px 2px 10px 0 #8db0fc;
+    
+    top: 427px;
+    align-items: center;
+}
+
+.booking-panel {
+    position: absolute;
+}
+
+.booking-panel2 {
+    top: 100px;
+}
+
+.booking-panel div, .booking-panel2 div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    width: 200px;
+    margin-right: 20px;
+}
+
+/* I seperated this because border-radius of .building wasn't overwritting.
+    So, i selected all the divs except building to modify it seperately */
+.city2, .checkin2, .checkout2, .guest2 {
+    border-radius: 5px;
+}
+
+.booking-panel i, .booking-panel2 i{
+    color: var(--myblue);
+    margin-right: 10px;
+}
+
+.building img , .building2 img{
+    width: 70px;
+    height: 70px;
+}
+
+.building ,.building2 {
+    border-radius: 5px 0 0 5px;
+    background-image: linear-gradient(to right, #F83A08, #ff9d33);
+}
+
+.booking-panel * label, .booking-panel * label {
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    color: var(--myblue);
+}
+
+.booking-panel * input, .booking-panel2 * input {
+    text-align: center;
+    padding: 4px 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+    /* border-radius: 5px; */
+    border-top: 2px solid rgb(245, 245, 245);
+    outline: none;
+    height: 30px;
+    background-image: linear-gradient(to right, whitesmoke 35%, white);
+}
+
+#guest , #guest2 {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#guest input , #guest2 input{
+    width: 50%;
+}
+
+.search-button input, .search-button2 input{
+    top: 34em;
+    transform: translate(-50%, -50%);
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    box-sizing: border-box;
+    line-height: 5px;
+    
+    background-image: linear-gradient(to right, #F83A08, #FD9729);
+    transition: .7s;
+}
+
+.search-button input{
+    position: absolute;
+}
+
+.search-button2 input {
+    position: absolute;
+    right: 0;
+    top: 107px;
+    line-height: 1px;
+    background-image: linear-gradient(to right, #FD9729, #F83A08);
+    box-shadow: 1px 1px 50px 0 ;
+}
+
+.search-button input:hover , .search-button2 input:hover{
+    background-image: linear-gradient(45deg, #83D6FE, #1D58CD);
+}
+
+.saying {
+    position: absolute;
+    top: 5em;
+    color: #3C409B;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    text-shadow: 0px 1px 40px #14213d;
+}
+
+.hotels {
+    opacity: 1;
+}
+
+.hotels .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    justify-content: space-around;
+}
+
+.listed {
+    position: relative;
+    margin: 0 0 2em 0;
+    width: 45%;
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    border-radius: 5px;
+    
+    box-shadow: 1px 2px 10px 0 #8db0fc;
+}
+
+.listed img {
+    border-radius: 5px;
+    width: 200px;
+    height: 100%;
+}
+
+.listed img:hover {
+    box-shadow: 1px 1px 5px 0 #8db0fc;
+}
+
+.details {
+    margin: 0 0 0 20px;
+    height: 200px;
+}
+
+.details .hotel-name {
+}
+
+.hotel-name a {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0;
+    border: none;
+    color: var(--myorange);
+}
+
+.address i {
+    margin: 0 .2em 0 0;
+}
+
+.address {
+    margin: 0;
+    font-weight: lighter;
+}
+
+.description {
+    font-size: small;
+    color: gray;
+    padding: .8em 0;
+}
+
+h1 {
+    margin: 15px 10px 0 0;
+}
+
+h6 {
+    margin: 0 0 10px 0;
+}
+
+.book-btn input {
+    position: absolute;
+    right: 0;
+    bottom: -.7em;
+    margin: -10px 20px 0 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: .4em .8em;
+    background-color: var(--myblue);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 1px 1px 20px 0px #09307e;
+}
+
+.book-btn input:hover {
+    background-image: linear-gradient(45deg, #1D58CD 45%, #83D6FE);
+    transition: 5s;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------- */
+
+/* this is for register-box */
+
+.register-box {
+}
+
+
+.back{
+    color: black;
+    position: absolute;
+    top: -5em;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    cursor: pointer;
+}
+
+.register-box {
+
+    position: absolute;
+    margin: 0;
+    padding-top: 5px;
+    background-color: #3C409B;
+    height: fit-content;
+    width: 20%;
+    border-radius: 5px 5px 0 0;
+
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 22em;
+
+    background-image: linear-gradient(to bottom, #1D58CD, #83D6FE);
+    box-shadow: 1px 1px 10px 0 black;
+    
+    transition: all 0.3s ease;
+    visibility: hidden;
+}
+
+.login-page {
+    background-image: linear-gradient(to bottom, #F83A08, #ee8616);
+}
+
+form li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+    align-items: center;
+}
+
+
+
+
+
+
+/* i copied register page from another project of my own and 
+    some fault was showed up in name input box so i did this below to make it normal */
+
+.name {
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: .5em;
+    box-shadow: 1px 0px 2px 0 #314877;
+}
+
+
+form label {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+}
+
+form input {
+    padding: .5em;
+    border: 2px solid white;
+    border-radius: .2em;
+    margin-bottom: 5px;
+    width: 100%;
+    outline: none;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 2px 0 #314877;
+}
+
+.register-button-cta , .login-button-cta{
+    padding: .3em;
+    border: 2px solid #1D58CD;
+    border-radius: .2em;
+    background: #1D58CD;
+    color: white;
+    font-size: 1em;
+    width: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 0 #1d58cd;
+}
+
+form li h5 {
+    margin-top: -5px;
+    font-weight: normal;
+}
+h5 a {
+    color: var(--myorange);
+}
+.or {
+    margin-top: -2em;
+    font-weight: bold;
+}
+
+.icons {
+    position: absolute;
+    border:2px solid white;
+    padding: 5px 5px;
+    background: black;
+    border-radius: 5em;
+    margin-top: -7px;
+    box-shadow: 1px 1px 20px 0 #314877;
+}
+
+.icons img {
+    position: relative;
+    width: 25px;
+    margin: .4em .6em 0 .6em;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+
+/* login-box css */
+
+
+.login-page {
+    position: absolute;
+    margin: 0;
+    padding-top: 5px;
+    background-color: #3C409B;
+    height: fit-content;
+    width: 20%;
+    border-radius: 5px 5px 0 0;
+
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 20em;
+
+    background-image: linear-gradient(to bottom, #1D58CD, #83D6FE);
+    box-shadow: 1px 1px 10px 0 #314877;
+    
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+
+/* filhaal, not in use*/
+
+/* listing webpage */
+
+.parts {
+    display: flex;
+}
+
+/* deals + discouts + trending destinations */
+
+.parts .left {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left .container {
+    border: 2px solid ;
+    height: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------ */
+
+/* payment page css */
+
+.payment {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 1em 0 0 0;
+}
+
+.payment-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.enter-details {
+    border-radius: 5px 0 0 5px;
+    border: none;
+    background-color: white;
+    padding: .1em;
+    width: 250px;
+    height: fit-content;
+}
+.roomnbutton .room {
+    font-size: 1.2em;
+    width: 44%;
+}
+
+.enter-details div {
+    margin: 1em;
+}
+
+.enter-details div input {
+    padding: 5px 10px;
+    border: 2px solid white;
+    outline: none;
+    border-bottom: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+}
+
+.roomnbutton {
+    justify-content: space-between;
+}
+
+.roomnbutton .done {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #F83A08;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.detail-box {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+}
+
+.addguest button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #F83A08;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 100%;
+    cursor: pointer;
+}
+
+.heading label {
+    margin-left: 12px;
+}
+
+
+.pay-left {
+    display: flex;
+    justify-content: space-evenly;
+    width: fit-content;
+}
+
+.guest-list .container {
+    margin: 0 0 0 2em;
+    width: 400px;
+}
+
+.up , .down{
+    display: flex;
+}
+
+.up {
+    margin: 5px 5px 0 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.down {
+    margin: 0 5px 5px 5px;
+    justify-content: space-between;
+}
+
+.down i {
+    margin: 0 5px 0 0;
+    color:#F83A08;
+    cursor: pointer;
+}
+
+.getter {
+    width: 100%;
+    border-bottom: 1px solid #fdbeae;
+    margin: 0 0 10px 0;
+}
+
+.getter:last-child {
+    border-bottom: none;
+}
+
+.seperator {
+    margin: 0 .5em 0 .5em;
+    
+}
+
+
+
+/* --------------------------------------------- */
+
+/* payment card starts here */
+
+.pay-right {
+    margin: 0 0 0 10px;
+    border: none;
+    width: 30%;
+    border-radius: 25px;
+    /* background-color: rgb(44, 192, 108);
+    background-image: linear-gradient(45deg, rgb(44, 192, 108), rgb(190, 192, 44));
+    box-shadow: 1px 5px 50px 1px rgb(44, 192, 108); */
+
+    background-image: linear-gradient(32deg, #1D58CD 45%, #83D6FE);
+    box-shadow: 1px 5px 30px 1px #1d58cd;
+    
+    /* background-image: linear-gradient(45deg, #F83A08, #ee8616); */
+
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pay-options {
+    display: flex;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: #EFEFEF;
+    color: black;
+    border-radius: 12.5px;
+    padding: .3em;
+    width: 100%;
+    height: fit-content;
+}
+
+.pay-options div {
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cc-form {
+    display: ;
+}
+
+#cc {
+    background-color: black;
+    color: #EFEFEF;
+    padding: .2em;
+    border-radius: 10px;
+}
+
+#upi {
+    background-color: #EFEFEF;
+    color: black;
+    padding: .2em;
+    border-radius: 10px;
+}
+
+.cc-icons {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding: 1.5em 0;
+}
+
+#seperator-1, #seperator-2 {
+    margin: 0 .5em 0 .5em;
+}
+
+.credit-card {
+    width: 100%;
+    width: 100%;
+}
+
+.label {
+    color: white;
+    font-size: 1em;
+}
+
+.card-info {
+    margin: 1em 0 0 0;
+}
+
+.card-info input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid whitesmoke;
+    width: 100%;
+    font-size: 1.5em;
+    padding: .5em 0 0.1em 0;
+    letter-spacing: .1em;
+    color: whitesmoke;
+}
+
+.expiry-code {
+    display: flex;
+}
+
+.expiry input, .cvv input {
+    width: 95%;
+}
+
+.proceed-btn input {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .5em 3em;
+    width: 100%;
+    border-radius: 12.5px;
+    border: none;
+    margin: 1.5em 0 0 0;
+    cursor: pointer;
+}
+
+.expiry input::placeholder {
+    color: rgb(220, 213, 213);
+}
+
+/* ------------------------------------------- */
+
+/* upi starts here */
+
+.upi-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upi-form div {
+    text-align: center;
+    margin: 1.2em 0 0 0;
+}
+
+.qr-code {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+    width: fit-content;
+}
+
+.qr-code img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.userid input {
+    border: none;
+    outline: none;
+    padding: .5em;
+    font-size: 1.2em;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.userid input::placeholder {
+    color: whitesmoke;
+}
+
+.proceed-upi-btn input {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .5em 3em;
+    width: 100%;
+    border-radius: 12.5px;
+    border: none;
+    cursor: pointer;
+    margin: .2em 0 0 0;
+}
+
+.upi-display-toggle {
+    display: none;
+}
+
+.total {
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    left: 102px;
+    top: 15em;
+    background-color: white;
+    border-radius: 5px;
+    padding: .3em 0;
+    text-align: center;
+    width: 246px;
+    box-shadow: 1px 1px 20px 1px #F83A08;
+}

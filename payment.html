@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/77ad616e29.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="payment-body">
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html">
+                <div class="logo">
+                    <span class="left">○</span>
+                    lo.
+                    <span> go </span>
+                    <span class="right">○</span>
+                </div>
+            </a>
+
+            <div class="navigation">
+                <ul>
+                    <li>
+                        │
+                    </li>
+                    <li>
+                        <a href="">Join Beta</a>
+                    </li>
+                    <li>
+                        <a href="login.html" target="_blank">Login</a>
+                    </li>
+                    <li class="premium" id="premium">
+                        <a href="register.html" target="_blank">Create Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+    <section class="payment">
+
+        <div class="pay-left">
+
+            <!-- ----------------------------------------------------------------------------------------------- -->
+
+            <div class="enter-details">
+
+                <div class="roomnbutton">
+                    <input type="number" id="totalroom" class="room" placeholder="Rooms">
+                    <input type="submit" value="Submit" class="done" onclick="rooms()">
+                </div>
+                <d.guesiv class="container">
+                    <div class="heading">
+                        <label for="">Enter Guests Details</label>
+                    </div>
+                    <div class="detail-box">
+                        <input type="text" id="full-name" placeholder="Full Name" maxlength="25">
+                        <input type="number" id="age" placeholder="Age">
+                        <input type="text" id="aadhar-num" placeholder="Aadhar Number" maxlength="12">
+
+                        <div class="gender">
+                            <label for="">Male</label>
+                            <input type="radio" name="gender" id="male">
+                            <label for="">Female</label>
+                            <input type="radio" name="gender" id="female">
+                        </div>
+                    </div>
+                    <div class="addguest">
+                        <button type="submit" onclick="showOutput()">Add Guest</button>
+                    </div>
+            </div>
+
+            <!-- ----------------------------------------------------------------------------------------------- -->
+
+            <div class="guest-list">
+                <div class="container">
+                    <div id="ul">
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ----------------------------------------------------------------------------------------------- -->
+
+        </div>
+        <div class="pay-right">
+
+            <div class="pay-options">
+                <div id="cc" onclick="toggleCC()">
+                    Credit Card
+                </div>
+                <div id="upi" onclick="toggleUPI()">
+                    BHIM UPI
+                </div>
+            </div>
+
+            <!-- ---------------------------------------- -->
+
+            <div class="cc-form">
+
+                <div class="cc-icons">
+                    <div class="card-icon">
+                        <i class="fa fa-cc-mastercard fa-4x"></i>
+                    </div>
+
+                    <div class="card-icon">
+                        <i class="fa fa-cc-discover fa-4x"></i>
+                    </div>
+
+                    <div class="card-icon">
+                        <i class="fa fa-cc-visa fa-4x"></i>
+                    </div>
+
+                    <div class="card-icon">
+                        <i class="fa fa-cc-amex fa-4x"></i>
+                    </div>
+                </div>
+
+                <!-- ---------------------------------------- -->
+
+                <div class="seperator"></div>
+
+                <!-- ---------------------------------------- -->
+
+                <div class="credit-card">
+                    <div class="card-info">
+                        <div class="label"> Name </div>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="card-info">
+                        <div class="label"> Card Number </div>
+                        <div>
+                            <input type="text" maxlength="16">
+                        </div>
+
+                        <div class="card-info expiry-code">
+                            <div class="expiry">
+                                <div class="label"> Expiry </div>
+                                <div>
+                                    <input type="text" maxlength="5" placeholder="01/21">
+                                </div>
+                            </div>
+
+                            <div class="cvv">
+                                <div class="label"> Security Code </div>
+                                <div>
+                                    <input type="text" maxlength="3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proceed-btn" id="proceed-btn">
+                        <input type="submit" value="Proceed to Pay">
+                    </div>
+                </div>
+            </div>
+
+            <div class="upi-form upi-display-toggle" id="upi-box">
+                <div class="scan-label">
+                    Scan QR Code or Continue with UPI ID
+                </div>
+
+                <div class="qr-code">
+                    <img src="images/upi-qrcode.svg" alt="Not Found">
+                </div>
+
+                <div class="userid">
+                    <input type="text" placeholder="Enter UPI ID">
+                </div>
+
+                <div class="proceed-upi-btn" id="proceed-upi-btn">
+                    <input type="submit" value="Proceed to Pay">
+                </div>
+            </div>
+        </div>
+
+        <div class="total" id="total-amount">
+            Rs. 5,789 only
+        </div>
+    </section>
+</body>
+
+</html>
